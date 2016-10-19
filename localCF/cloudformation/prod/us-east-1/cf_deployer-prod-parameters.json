@@ -1,0 +1,6 @@
+[
+    {
+        "ParameterKey": "CodeBucket",
+        "ParameterValue":"w-lambda-deployer-prod-us-east-1"
+    }
+]

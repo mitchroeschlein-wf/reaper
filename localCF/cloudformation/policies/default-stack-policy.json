@@ -1,0 +1,13 @@
+{
+    "Statement" : [
+        {
+            "Effect" : "Allow",
+            "NotAction" : [
+                "Update:Delete",
+    	        "Update:Replace"
+            ],
+            "Principal": "*",
+            "Resource" : "*"
+        }
+    ]
+}

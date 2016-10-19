@@ -1,0 +1,7 @@
+markupsafe==0.23
+pygithub==1.26.0
+python-dateutil==2.5.2
+jinja2==2.8
+six==1.10.0
+botocore==1.4.60
+boto3==1.4.1
