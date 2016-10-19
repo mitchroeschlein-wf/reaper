@@ -1,3 +1,3 @@
 #!/bin/bash 
-action='{"action": "create", "repository": "Workiva/example", "service": "aws-config-rule-tagging-dev", "tag": "1.0.0"}'
+action='{"action": "create", "repository": "mitchroeschlein-wf/linking-api", "service": "linking-api-dev", "tag": " 0.5.10-cf"}'
 python runlocal.py "$action"
