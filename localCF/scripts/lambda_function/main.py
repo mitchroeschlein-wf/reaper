@@ -53,8 +53,9 @@ def checkStackStatus(event):
     try:
         deployConfig = json.loads(git.get_file_content(
             repo, tagRef, "deploy.json"))
+
     except:
-        message = "Could not retrieve deploy.json from github and parse it as json"
+        message = "CheckStatus: Could not retrieve deploy.json from github and parse it as json"
         logger.error(message)
 
         return [{
@@ -107,7 +108,7 @@ def deleteStacks(event):
             repo, tagRef, "deploy.json"))
     except:
         return handleError(
-            "Could not retrieve deploy.json from github and parse it as json")
+            "DeleteStacks: Could not retrieve deploy.json from github and parse it as json")
 
     serviceConfig = deployConfig[service]
     for stackConfig in serviceConfig:
@@ -159,7 +160,7 @@ def updateStacks(event):
             repo, tagRef, "deploy.json"))
     except:
         return handleError(
-            "Could not retrieve deploy.json from github and parse it as json")
+            "UpdateStacks: Could not retrieve deploy.json from github and parse it as json")
 
     serviceConfig = deployConfig[service]
     for stackConfig in serviceConfig:
